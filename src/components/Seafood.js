@@ -4,9 +4,9 @@ import { ListGroup, ListGroupItem } from 'react-bootstrap'
 export default class Seafood extends Component {
   render () {
     return <div>
-      <h1 className='heads1'>Seafood</h1>
+      <h1>Seafood</h1>
       <main>
-        <ListGroup bsClass='lists'>
+        <ListGroup>
           <ListGroupItem header='Casual Clam' href='http://www.casualclam.com' />
           <ListGroupItem header='BoneFish Grill' href='https://www.bonefishgrill.com/' />
         </ListGroup>
