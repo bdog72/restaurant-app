@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Grid, Row, Col, Thumbnail } from 'react-bootstrap'
 import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router'
+// import { LinkContainer } from 'react-router-bootstrap'
 export default class Thumbnails extends Component {
   render () {
     return <div>
@@ -31,9 +32,15 @@ export default class Thumbnails extends Component {
             <Thumbnail className='thumbpics1'>
               <Menu.Item className='menu1'as={Link} to='/EverythingElse'>Everything Else</Menu.Item>
             </Thumbnail>
+            {/* <LinkContainer to='/EverythingElse'>
+              <Thumbnail>
+                <p>Everything Else</p>
+              </Thumbnail>
+            </LinkContainer> */}
           </Col>
         </Row>
       </Grid>
+      {/* <Image src='http://sirpizza-mi.com/wp-content/uploads/2014/07/Sir-Pizza-Pan-Pizza-1920x12001.jpg' responsive /> */}
     </div>
   }
 }
