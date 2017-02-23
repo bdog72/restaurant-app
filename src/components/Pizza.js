@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
-import { ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 
 export default class Pizza extends Component {
   render () {
+    const wellStyles = {maxWidth: 400, margin: '0 auto 10px'}
+
     return <div>
       <h1>Pizza</h1>
       <main>
-        <ListGroup>
-          <ListGroupItem header='Little Italy' href='https://tobysoriginallittleitalypizza.com/' />
-          <ListGroupItem header='Italia Mia' href='http://laitaliamia.com/' />
-          <ListGroupItem header='Paisanos' href='http://paisanospnp.com/' />
-          <ListGroupItem header='28 Grams Pizza' href='http://www.28gramspizza.com/' />
-        </ListGroup>
+        <div className='well' style={wellStyles}>
+          <Button bsSize='large' href='https://tobysoriginallittleitalypizza.com/' block>Little Italy</Button>
+          <Button bsSize='large' href='http://laitaliamia.com/' block>Italia Mia</Button>
+          <Button bsSize='large' href='http://paisanospnp.com/' block>Paisanos</Button>
+          <Button bsSize='large' href='http://www.28gramspizza.com/' block>28 Grams</Button>
+        </div>
       </main>
     </div>
   }
